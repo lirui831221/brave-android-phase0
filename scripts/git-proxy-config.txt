@@ -1,0 +1,26 @@
+# GitHub SSH over 443（lecoo 构建机）
+
+lecoo 的 Clash 代理拦截 22 端口（表现为连接 198.18.x.x 被重置），GitHub 官方支持 443 端口 SSH。
+
+`~/.ssh/config`：
+
+```
+Host github.com
+    HostName ssh.github.com
+    Port 443
+    User git
+    IdentityFile ~/.ssh/id_ed25519_liruidebian
+```
+
+# git 全局配置（lecoo）
+
+```bash
+# 防 Clash 对 googlesource 大 pack 的 HTTP/2 断流
+git config --global http.version HTTP/1.1
+git config --global http.postBuffer 524288000
+git config --global http.lowSpeedLimit 0
+git config --global http.lowSpeedTime 999999
+
+# Chromium 主仓库 fetch 重定向到本地种源（种源在 /home/lecoo/chromium-seed/src.git）
+git config --global url."/home/lecoo/chromium-seed/src.git".insteadOf "https://chromium.googlesource.com/chromium/src.git"
+```
