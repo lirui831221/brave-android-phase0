@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "release_tag": "android-1.98.0-dcheckoff-105",
+  "channel": "candidate",
+  "official_brave_release": false,
+  "filename": "Brave-ARM64-DcheckOff-105.apk",
+  "package": "com.brave.browser_startup_test",
+  "version_name": "1.98.0-adblock2-rc1",
+  "version_code": 429800105,
+  "architecture": "arm64-v8a",
+  "min_android_api": 29,
+  "debuggable": false,
+  "bytes": 442467358,
+  "sha256": "1bfc4d647c66121bb6bfa51a6731be4f26427be21bfe58d8abeb472ffeccd8e2",
+  "certificate_sha256": "58a6016b2f009be6e4981dcbf8362c969588f7c7915547f2f54492b1d18c794c",
+  "source": {
+    "brave_upstream_version": "1.98.43",
+    "brave_upstream_commit": "26101b8ddd687f0abd974337742fc3f4233253ae",
+    "chromium_upstream_version": "155.0.8059.16",
+    "chromium_upstream_commit": "eb81d1e9a7da2b5edae9a034166cbf1640ab8c55",
+    "customized_working_tree": true,
+    "brave_working_tree_fingerprint_sha256": "e603b1e013fe8a07f592b982f4f7b1f2ab59c23348b2b1b29b2254682fba09b1",
+    "chromium_working_tree_fingerprint_sha256": "4a286877b23db321bd6b0af030b6ac8a24df1d4ea89937aef3496f20ec3b4750",
+    "complete_source_snapshot_in_this_release": false,
+    "bit_reproducibility_verified": false
+  },
+  "build_flags": {
+    "is_debug": false,
+    "dcheck_always_on": false,
+    "enable_expensive_dchecks": false,
+    "dcheck_is_configurable": false
+  },
+  "baseline_apk_bytes": 581930100,
+  "apk_size_reduction_percent": 23.96554878326452,
+  "validation": {
+    "playback_samples_completed": 8,
+    "startup_menu_checks_passed": 12,
+    "startup_menu_checks_total": 12,
+    "new_crash_or_anr_observed_in_saved_test_records": false,
+    "consistent_playback_improvement_demonstrated": false,
+    "performance_nonregression_formally_proven": false,
+    "browser_warning_verified": false,
+    "full_stable_startup_acceptance_verified": false,
+    "source_security_reviewed": false,
+    "full_recovery_drill_verified": false,
+    "data_preserving_upgrade_tested_on_one_device": true
+  },
+  "manifest_purpose": "Public provenance summary; not a signed update manifest or automatic-update authorization."
+}

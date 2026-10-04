@@ -1,4 +1,16 @@
-# Brave Android 定制浏览器 — Phase 0
+# Brave Android 定制浏览器
+
+最新候选交付：**105（1.98.0-adblock2-rc1 / ARM64 Release）**，非 Brave 官方发行版。
+
+- [下载候选版 105](https://github.com/lirui831221/brave-android-phase0/releases/tag/android-1.98.0-dcheckoff-105)
+- [完整说明、验收结果和已知限制](docs/releases/android-1.98.0-dcheckoff-105/README.md)
+- [构建与文件校验信息](docs/releases/android-1.98.0-dcheckoff-105/build-manifest.json)
+
+本轮关闭原生开发检查，安装包缩小约 24%，启动后指定时点的菜单点击检查 12/12 通过。尚未证实稳定的掉帧改善，Safe Browsing 实际告警与完整安全更新验收仍未完成，因此以预发布提供。
+
+以下保留早期 Phase 0 的历史记录；其中的“零源码修改”、包名、架构和测试结论仅适用于 Phase 0，不代表当前候选版。
+
+## 历史记录：Phase 0
 
 基于 [Brave](https://github.com/brave/brave-core) 官方开源代码构建的独立 Android 浏览器项目。
 
